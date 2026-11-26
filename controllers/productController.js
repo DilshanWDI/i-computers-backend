@@ -138,7 +138,7 @@ export async function getProductById(req, res) {
             if (product.isAvailable) {
                 res.status(200).json(product)
             } else {
-                if (isAdmin(req)) {
+                if (isAdmin(req))  {
                     {
                         res.status(403).json(product)
                     }
